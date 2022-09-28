@@ -197,7 +197,6 @@ input {
   border-radius: 2px;
   box-sizing: border-box;
   text-transform:uppercase;
-  
 }
 
 input[type=submit] {
@@ -212,8 +211,7 @@ input[type=submit] {
   border-radius: 10px;
   cursor: pointer;
   text-transform:uppercase;
-  display:block;
-  
+  display:block; 
 }
 
 footer {
