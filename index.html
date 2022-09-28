@@ -6,89 +6,132 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Patric Renzo Del Rosario">
-    <meta name="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles.css">
     <title>Photo Gallery</title>
 </head>
 
 <body>
     <header>
-        <h1>TK Photography</h1>
+        <h1>Tk Photography</h1>
         <nav>
             <ul>
                 <li><a href="#about">About</a></li>
                 <li><a href="#gallery">Gallery</a></li>
                 <li><a href="#contact">Contact</a></li>
-                <li><a href="#top">^ top</a></li>
+                <li><a href="#top">^<br>top</a></li>
             </ul>
         </nav>
     </header>
 
     <main>
         <section id="about">
-            About
-            TK.png
-
-            Hello!
-            I’m TK and I’m a photographer. I love looking at life through the lens of my camera. Landscape photography
-            is my
-            speciality and it’s taken me all over the world.
+            <img src="/images/TK.png">
+            <h2>About</h2>
+            <p>Hello!<br>
+                I’m TK and I’m a photographer. <br>I love looking at life through the lens of my camera. Landscape
+                photography
+                is my
+                speciality and it’s taken me all over the world.</p>
         </section>
 
         <section id="gallery">
-            Gallery
-            Here are some highlights of my work.
-            The locations and year are in the caption.
+            <h2>Gallery</h2>
+            <p>Here are some highlights of my work.
+                The locations and year are in the caption.</p>
         </section>
 
         <section>
-            Chile.png
-            Chile, 2001
+            <table>
+                <tbody>
+                    <tr>
+                        <td>
+                            <img src="/images/Chile.png">
+                            <p id="top_left_black">Chile, 2001</p>
+                        </td>
 
-            Guatemala.png
-            Guatemala, 1997
+                        <td>
+                            <img src="/images/Guatemala.png">
+                            <p id="top_left_white">Guatemala, 1997</p>
+                        </td>
 
-            Hawaii.png
-            Hawaii, 2010
+                        <td>
+                            <img src="/images/Hawaii.png">
+                            <p id="bottom_right_white">Hawaii, 2010</p>
+                        </td>
+                    </tr>
 
-            Iran.png
-            Iran, 1999
+                    <tr>
+                        <td>
+                            <img src="/images/Iran.png">
+                            <p id="top_left_black_iran">Iran, 1999</p>
+                        </td>
 
-            Ireland.png
-            Ireland, 2012
+                        <td>
+                            <img src="/images/Ireland.png">
+                            <p id="bottom_right_white">Ireland, 2012</p>
+                        </td>
 
-            Italy.png
-            Italy, 2015
+                        <td>
+                            <img src="/images/Italy.png">
+                            <p id="bottom_left_white">Italy, 2015</p>
+                        </td>
+                    </tr>
 
-            Moab-Desert.png
-            Moab Desert, 2020
+                    <tr>
+                        <td>
+                            <img src="/images/Moab-Desert.png">
+                            <p id="bottom_right_white">Moab Desert, 2020</p>
+                        </td>
 
-            Rocky-Mountains.png
-            Rocky Mountains, 2009
+                        <td>
+                            <img src="/images/Rocky-Mountains.png">
+                            <p id="top_left_black">Rocky Mountains, 2009</p>
+                        </td>
 
-            Switzerland.png
-            Switzerland, 2014
+                        <td>
+                            <img src="/images/Switzerland.png">
+                            <p id="bottom_left_black">Switzerland, 2014</p>
+                        </td>
+                    </tr>
 
-            UK.png
-            UK, 2005
+                    <tr>
+                        <td>
+                            <img src="/images/UK.png">
+                            <p id="bottom_right_white">UK, 2005</p>
+                        </td>
 
-            USA.png
-            USA, 2021
+                        <td>
+                            <img src="/images/USA.png">
+                            <p id="top_left_white">USA, 2021</p>
+                        </td>
 
-            Wyoming.png
-            Wyoming, 2021
+                        <td>
+                            <img src="/images/Wyoming.png">
+                            <p id="top_left_white">Wyoming, 2021</p>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
         </section>
     </main>
 
     <aside id="contact">
-        Contact
+        <h2>Contact</h2>
 
-        Please fill out this form and I’ll connect with you soon.
+        <p>Please fill out this form and I’ll connect with you soon.</p>
 
-        Your contact information
-        Name (Your full name)
-        Email (Enter your email address)
-        Message (What can I help you with?)
-        Submit
+        <form action="#">
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" placeholder="Your full name"><br>
+
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" placeholder="Enter your email address"><br>
+
+        <label for="message">Message</label>
+        <input type="text" id="message" name="message" placeholder="What can I help you with?"><br>
+
+        <input type="submit" vplaceholder="Submit">
+        </form>
     </aside>
 
     <footer>
